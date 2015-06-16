@@ -1,0 +1,20 @@
+{
+  "name": "jhoblitt-mono",
+  "version": "0.1.0",
+  "author": "Joshua Hoblitt <jhoblitt@cpan.org>",
+  "summary": "Manages the Blue Jeans Browser Plug-in",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jhoblitt/puppet-mono.git",
+  "project_page": "https://github.com/jhoblitt/puppet-mono",
+  "issues_url": "https://github.com/jhoblitt/puppet-mono/issues",
+  "operatingsystem_support": [
+    { "operatingsystem": "RedHat", "operatingsystemrelease": [ "7" ] },
+    { "operatingsystem": "CentOS", "operatingsystemrelease": [ "7" ] },
+    { "operatingsystem": "Scientific", "operatingsystemrelease": [ "7" ] },
+    { "operatingsystem": "Fedora", "operatingsystemrelease": [ "21", "22" ] }
+  ],
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">= 4.6.0 < 5.0.0" },
+    { "name": "stschulte/rpmkey", "version_requirement": ">= 1.0.0 < 2.0.0" }
+  ]
+}
