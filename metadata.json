@@ -2,7 +2,7 @@
   "name": "jhoblitt-mono",
   "version": "0.1.0",
   "author": "Joshua Hoblitt <jhoblitt@cpan.org>",
-  "summary": "Manages the Blue Jeans Browser Plug-in",
+  "summary": "Manages the official mono packages",
   "license": "Apache-2.0",
   "source": "https://github.com/jhoblitt/puppet-mono.git",
   "project_page": "https://github.com/jhoblitt/puppet-mono",

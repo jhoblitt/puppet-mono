@@ -4,8 +4,8 @@ describe 'mono', :type => :class do
   context 'on osfamily RedHat' do
     let(:facts) {{ :osfamily => 'RedHat' }}
 
-    it { should contain_yumrepo('mono') }
-    it { should contain_package('bjnplugin') }
+    it { should contain_yumrepo('download.mono-project.com_repo_centos_') }
+    it { should contain_package('mono-complete') }
   end
 
   context 'on osfamily Solaris' do

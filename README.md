@@ -1,5 +1,5 @@
 Puppet mono Module
-=======================
+==================
 
 [![Build Status](https://travis-ci.org/jhoblitt/puppet-mono.png)](https://travis-ci.org/jhoblitt/puppet-mono)
 
@@ -19,7 +19,8 @@ Puppet mono Module
 Overview
 --------
 
-Manages the Blue Jeans Browser Plug-in
+Manages the official mono packages
+
 
 Usage
 -----
@@ -83,4 +84,4 @@ Contributing
 See Also
 --------
 
-* [Blue Jeans Browser Plug-in](http://mono.com/downloads)
+* [Install Mono](http://www.mono-project.com/docs/getting-started/install/)

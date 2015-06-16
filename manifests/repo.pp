@@ -7,16 +7,20 @@ class mono::repo {
     fail("Use of private class ${name} by ${caller_module_name}")
   }
 
-  rpmkey { '5FF054BD':
+  rpmkey { 'D3D831EF':
     ensure => present,
-    source => 'https://swdl.mono.com/repos/mono/bjn-key',
+    source => 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF',
   } ->
-  yumrepo { 'mono':
+  # this is the repo name created by running:
+  # yum-config-manager --add-repo http://download.mono-project.com/repo/centos/
+  # per the instructions @
+  # http://www.mono-project.com/docs/getting-started/install/linux/#usage
+  yumrepo { 'download.mono-project.com_repo_centos_':
     ensure   => 'present',
-    baseurl  => 'https://swdl.mono.com/repos/mono/x86_64/release/rpm',
-    descr    => 'Blue Jeans Network, Inc. - x86_64 software and updates',
+    baseurl  => 'http://download.mono-project.com/repo/centos/',
+    descr    => 'added from: http://download.mono-project.com/repo/centos/',
     enabled  => '1',
     gpgcheck => '1',
-    gpgkey   => 'https://swdl.mono.com/repos/mono/bjn-key',
+    gpgkey   => 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF',
   }
 }

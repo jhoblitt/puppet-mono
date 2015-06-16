@@ -15,11 +15,11 @@ describe 'mono class' do
       apply_manifest(pp, :catch_changes => true)
     end
 
-    describe package('bjnplugin') do
+    describe package('mono-complete') do
       it { should be_installed }
     end
 
-    describe yumrepo('mono') do
+    describe yumrepo('download.mono-project.com_repo_centos_') do
       it { should be_enabled }
     end
   end
